@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    bottom:0;
+    left:0  
+}
+header img {
+    height: 50px;
+    margin: auto;
+    padding: 20px;
+    width: 10%;
+    height: 10%;
+}
+
+/*Main*/
+.text {
+    text-align: left;
+    text-align: justify;
+    padding: 30px;
+    margin: 5px;
+}
+div#form {
+    background-color: black;
+    margin: auto;
+    height: 250px;
+    width: 300px;
+    max-width: 100%;
+
+}
+footer{
+    background-color: black;
+    margin-top: 60px;
+    color: aliceblue;
+    width: 100vw;
+    padding: 10px;   
+}
+#img {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    max-width: 150px;
+    min-width: 100px;
+    margin: auto;
+    display: flex;
+    display: block;
+    
+}
+footer > h3 {
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    padding: 25px;
+    text-align: justify;
+}
+footer a {
+    margin: 10px;
+}
+#links{
+    padding: 5px;
+    text-align: center;
+}
+
+/* width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}*/
+   /*
+   /*A tecnica para sempre colar o footer
+ bottom:0; --- left:0 
+      position: fixed; -> esse fixed atrapalha a ter a rolagem e entao o footer nao se mexe por isso é ruim 
+   */ 
+   /*nao estavam funcionando{
+    font-weight: bolder;
+    padding: 5px;
+    margin: 5px;
+      width: 100vw;
+        width: 600px;
+        margin-left: 200px;
+            margin-right: 300px;
+             padding: 30px;
+                box-sizing: border-box;*/ 
