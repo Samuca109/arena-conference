@@ -12,17 +12,21 @@
 
 header{
     background-color: black;
+    align-items: center;
     display: flex;
     width: 100vw;
-    bottom:0;
-    left:0  
+    justify-content: space-between
 }
+
 header img {
-    height: 50px;
     margin: auto;
     padding: 20px;
     width: 10%;
     height: 10%;
+}
+
+header a{
+    color: aliceblue;
 }
 
 /*Main*/
@@ -32,14 +36,18 @@ header img {
     padding: 30px;
     margin: 5px;
 }
+
 div#form {
     background-color: black;
     margin: auto;
     height: 250px;
     width: 300px;
     max-width: 100%;
-
 }
+
+
+/*Footer*/
+
 footer{
     background-color: black;
     margin-top: 60px;
@@ -47,6 +55,7 @@ footer{
     width: 100vw;
     padding: 10px;   
 }
+
 #img {
     width: 100%;
     margin: auto;
@@ -85,13 +94,3 @@ footer a {
  bottom:0; --- left:0 
       position: fixed; -> esse fixed atrapalha a ter a rolagem e entao o footer nao se mexe por isso é ruim 
    */ 
-   /*nao estavam funcionando{
-    font-weight: bolder;
-    padding: 5px;
-    margin: 5px;
-      width: 100vw;
-        width: 600px;
-        margin-left: 200px;
-            margin-right: 300px;
-             padding: 30px;
-                box-sizing: border-box;*/ 
