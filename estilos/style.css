@@ -5,18 +5,21 @@
     padding: 0px;
 }
 
+/* TIra a barra de rolagem */
 ::-webkit-scrollbar{
     width: 0px;
     height: 0px;
-}
+} 
 
 header{
     background-color: black;
-    align-items: center;
-    display: flex;
     width: 100vw;
-    justify-content: space-between
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
 }
+
 
 header img {
     margin: auto;
@@ -25,24 +28,79 @@ header img {
     height: 10%;
 }
 
-header a{
+.Divlink{
+    margin: 10px;
+    text-align: right;
+}
+
+.a{
     color: aliceblue;
+    text-decoration: none;
 }
 
 /*Main*/
+
+
 .text {
-    text-align: left;
     text-align: justify;
     padding: 30px;
     margin: 5px;
 }
 
-div#form {
-    background-color: black;
+#form{
+   margin: auto;
+   width: 100%;
+
+   /**
+    *Aqui eu coloco ele como coluna e dou um espaçamento entre cada um 
+   */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+}
+
+
+#inputGeral{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+    /*Aqui com o display flex inicializa o meu flexbox*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#enviar{
+    width: 50px;
+    /*  align-self: center; Pega o elemento no individual*/
+    align-self: center;
+}
+
+.selecionar{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* line-height Da um espaçamento entre as linha */
+    line-height: 40px;
+}
+
+#formDois{
     margin: auto;
-    height: 250px;
-    width: 300px;
-    max-width: 100%;
+    display: flex; 
+
+    /* Esses dois sao os usados para centralizar a div um faz o alinhamento vertical e o outro o alinhamento horizontal
+    align-items: center;
+    justify-content: center; 
+    */
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -50,37 +108,33 @@ div#form {
 
 footer{
     background-color: black;
-    margin-top: 60px;
     color: aliceblue;
-    width: 100vw;
-    padding: 10px;   
+    width: 100%;
 }
 
 #img {
+    /* width: 100%; junto com o max-width e com o min-width Deixa a minha imagem responsiva*/
     width: 100%;
-    margin: auto;
     padding-top: 20px;
     max-width: 150px;
     min-width: 100px;
     margin: auto;
     display: flex;
-    display: block;
-    
 }
 footer > h3 {
     text-align: center;
 }
+
 footer p {
     text-align: center;
     padding: 25px;
     text-align: justify;
 }
-footer a {
-    margin: 10px;
-}
+
 #links{
     padding: 5px;
     text-align: center;
+    margin: 10px;
 }
 
 /* width: 100vw;
